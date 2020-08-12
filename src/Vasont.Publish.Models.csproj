@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>GlobalLink Vasont</Authors>
+    <Company>GlobalLink Vasont</Company>
+    <Product>GlobalLink Vasont Publish Server Models</Product>
+    <Description>GlobalLink Vasont Publish Server Common Models contains models related to API calls with the Publish Server REST API</Description>
+    <Copyright>Copyright (c) GlobalLink Vasont. All rights reserved.</Copyright>
+    <PackageLicenseExpression>APACHE-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://vasont.com/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/vasont-systems/Vasont.Publish.Models</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>CCMS</PackageTags>
+    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+  </ItemGroup>
+
+</Project>
