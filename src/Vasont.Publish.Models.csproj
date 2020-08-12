@@ -1,18 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+	<TargetFrameworks>net48;netstandard2.1</TargetFrameworks>
     <Authors>GlobalLink Vasont</Authors>
     <Company>GlobalLink Vasont</Company>
     <Product>GlobalLink Vasont Publish Server Models</Product>
     <Description>GlobalLink Vasont Publish Server Common Models contains models related to API calls with the Publish Server REST API</Description>
     <Copyright>Copyright (c) GlobalLink Vasont. All rights reserved.</Copyright>
-    <PackageLicenseExpression>APACHE-2.0</PackageLicenseExpression>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://vasont.com/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/vasont-systems/Vasont.Publish.Models</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>CCMS</PackageTags>
     <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+	<NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
