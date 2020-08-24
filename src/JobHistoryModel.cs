@@ -76,6 +76,18 @@ namespace Vasont.Publish.Models
         public string Deliverable { get; set; }
 
         /// <summary>
+        /// Gets or sets the name of the path for the distribution files.
+        /// </summary>
+        [StringLength(255), Required]
+        public string DistributionPath { get; set; }
+
+        /// <summary>
+        /// Gets or sets the name of the log file.
+        /// </summary>
+        [StringLength(255), Required]
+        public string Log { get; set; }
+
+        /// <summary>
         /// Gets or sets the user navigation property.
         /// </summary>
         public UserModel User { get; set; }
