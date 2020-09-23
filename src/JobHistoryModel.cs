@@ -88,6 +88,12 @@ namespace Vasont.Publish.Models
         public string Log { get; set; }
 
         /// <summary>
+        /// Gets or sets the name of the root component.
+        /// </summary>
+        [StringLength(100), Required]
+        public string ComponentName { get; set; }
+
+        /// <summary>
         /// Gets or sets the user navigation property.
         /// </summary>
         public UserModel User { get; set; }
