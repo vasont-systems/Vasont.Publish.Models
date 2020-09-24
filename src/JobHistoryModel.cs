@@ -94,6 +94,12 @@ namespace Vasont.Publish.Models
         public string ComponentName { get; set; }
 
         /// <summary>
+        /// Gets or sets the status of the requested job.
+        /// </summary>
+        [StringLength(50), Required]
+        public string Status { get; set; }
+
+        /// <summary>
         /// Gets or sets the user navigation property.
         /// </summary>
         public UserModel User { get; set; }
